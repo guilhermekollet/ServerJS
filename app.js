@@ -1,6 +1,6 @@
 var fs = require("fs");
 
-var http = require(“http”);
+var http = require("http");
 
 var express = require("express");
 
@@ -16,7 +16,7 @@ var servidor = app.listen(8080, function() {
 
 var porta = servidor.address().port;
 
-console.log(“Servidor executando na porta %s”, porta);
+console.log("Servidor executando na porta %s", porta);
 
 });
 
@@ -56,7 +56,7 @@ var valores = {
 
 for (var chave in valores) {
 
-dado = dado.toString().replace(“{{“ + chave + “}}”, valores[chave]);
+dado = dado.toString().replace("{{" + chave + "}}", valores[chave]);
 
 }
 
